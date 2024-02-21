@@ -20,7 +20,7 @@ char *get_next_line(int fd)
         index++;
         if (index == BUFFER_SIZE)
         {
-            new_buffer = realloc(buffer, 2 * BUFFER_SIZE + 1);
+            new_buffer = realloc(buffer, 2 * BUFFER_SIZE + 1);//use ft_realloc from mylibft
             if (new_buffer == NULL)
             {
                 free(buffer);
